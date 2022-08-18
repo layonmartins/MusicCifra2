@@ -33,7 +33,6 @@ class FirstFragment : Fragment() {
         binding.editTextMusic.setText(musicMock)
         binding.button.setOnClickListener {
             val music = binding.editTextMusic.text.toString()
-            Log.d("layon.f", "music = $music")
             val bundle = bundleOf("music" to music)
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
         }

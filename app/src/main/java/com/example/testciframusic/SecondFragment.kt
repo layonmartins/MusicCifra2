@@ -34,13 +34,20 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val text = arguments?.getString("music")
-        Log.d("layon.f", "music = $text")
+        Log.d("layon.f", "music = \n$text")
         binding.textviewSecond.text = text
 
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
+    }
+
+    //TODO this function that receives a music
+    //String that find and print all ciphers
+    // ex: Em, D and G in sequence
+    private fun findCiphers(music : String){
+
     }
 
     override fun onDestroyView() {
