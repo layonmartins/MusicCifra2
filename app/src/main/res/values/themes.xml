@@ -22,4 +22,12 @@
     <style name="Theme.TestCifraMusic.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TestCifraMusic.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.TestCifraMusic.Cipher">
+        <item name="android:textColor">@color/orangeWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
 </resources>

@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.testciframusic.databinding.FragmentSecondBinding
 
@@ -15,6 +16,7 @@ import com.example.testciframusic.databinding.FragmentSecondBinding
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
+    private var music : String? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -33,20 +35,26 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val text = arguments?.getString("music")
-        Log.d("layon.f", "music = \n$text")
-        binding.textviewSecond.text = text
+        music = arguments?.getString("music")
+        Log.d("layon.f", "music = \n$music")
 
+        findCiphersApproatch1()
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
     }
 
-    //TODO this function that receives a music
-    //String that find and print all ciphers
+    //TODO this function that receives a TextView
+    // that find and print all ciphers
     // ex: Em, D and G in sequence
-    private fun findCiphers(music : String){
+    private fun findCiphersApproatch1(){
+        music?.let{
+            binding.textviewSecond.setStyleOnSubstring(
+                string = it,
+                substring = Note.D.cipher,
+                style = R.style.Theme_TestCifraMusic_Cipher)
+        }
 
     }
 
