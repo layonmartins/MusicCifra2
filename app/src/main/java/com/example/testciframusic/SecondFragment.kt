@@ -38,7 +38,7 @@ class SecondFragment : Fragment() {
         music = arguments?.getString("music")
         Log.d("layon.f", "music = \n$music")
 
-        findCiphersApproatch1()
+        findCiphersApproach4()
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
@@ -48,14 +48,38 @@ class SecondFragment : Fragment() {
     //TODO this function that receives a TextView
     // that find and print all ciphers
     // ex: Em, D and G in sequence
-    private fun findCiphersApproatch1(){
+    private fun findCiphersApproach1(){
         music?.let{
-            binding.textviewSecond.setStyleOnSubstring(
+            binding.textviewSecond.setStyleOnSubstringApproach1(
                 string = it,
                 substring = Note.D.cipher,
                 style = R.style.Theme_TestCifraMusic_Cipher)
         }
+    }
 
+    private fun findCiphersApproach2(){
+        music?.let{
+            binding.textviewSecond.setStyleOnSubstringApproach2(
+                string = it,
+                cipherSubstring = Note.D,
+                style = R.style.Theme_TestCifraMusic_Cipher)
+        }
+    }
+
+    private fun findCiphersApproach3() {
+        music?.let {
+            binding.textviewSecond.setStyleOnSubstringApproach3(
+                string = it,
+            )
+        }
+    }
+
+    private fun findCiphersApproach4() {
+        music?.let {
+            binding.textviewSecond.setStyleOnSubstringApproach4(
+                string = it,
+            )
+        }
     }
 
     override fun onDestroyView() {

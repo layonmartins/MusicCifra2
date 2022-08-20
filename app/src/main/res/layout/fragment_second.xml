@@ -13,6 +13,7 @@
         android:layout_margin="20dp"
         android:gravity="start|top"
         android:background="#F8F8F8"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/button_second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

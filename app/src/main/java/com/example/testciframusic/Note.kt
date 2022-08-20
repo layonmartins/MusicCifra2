@@ -6,6 +6,7 @@ enum class Note(
     val cipher : String, //C, D, E...
     val code : Int, //1 = C, 2 = D
 ) {
+    //TODO create another accident notes
     C("Dó", "C", 1),
     D("Ré", "D", 2),
     E("Mi", "E", 3),

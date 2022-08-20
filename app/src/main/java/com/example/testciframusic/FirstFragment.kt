@@ -45,8 +45,28 @@ class FirstFragment : Fragment() {
     }
 
     val musicMock : String =
-    "Em       D        G\n" +
+    "C       D        E\n" +
     "Vem, vem Espirito Santo\n" +
-    "D                Am\n" +
+    "F     G    A      B\n" +
+    "Renova minha vida...\n" +
+    "Cm       Dm        Em\n" +
+    "Vem, vem Espirito Santo\n" +
+    "Fm     Gm    Am      Bm\n" +
+    "Renova minha vida...\n" +
+    "C       Db        Eb\n" +
+    "Vem, vem Espirito Santo\n" +
+    "F     Gb    Ab      Bb\n" +
+    "Renova minha vida...\n" +
+    "C#       D#        E\n" +
+    "Vem, vem Espirito Santo\n" +
+    "F#     G#    A#      B\n" +
+    "Renova minha vida...\n" +
+    "C#m       D#m        Em\n" +
+    "Vem, vem Espirito Santo\n" +
+    "F#m     G#m    A#m      Bm\n" +
+    "Renova minha vida...\n" +
+    "Cm       Dbm        Ebm\n" +
+    "Vem, vem Espirito Santo\n" +
+    "Fm     Gbm    Abm      Bbm\n" +
     "Renova minha vida...\n"
 }
