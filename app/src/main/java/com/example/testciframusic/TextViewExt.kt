@@ -92,9 +92,16 @@ fun TextView.setStyleOnSubstringApproach4(
                 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
             )
         } catch (e : IndexOutOfBoundsException) {
-            Log.e("layon.f", "Error, there is no substring on string")
+            Log.e("layon.f", "Error, there is no substring (${it.cipher}) on string")
         }
     }
 
     text = spannable
+}
+
+//iterate and change all note with plus tom note
+fun String.plusTom(
+    string: String,
+) : String {
+    return string.replace(Note.C.cipher, Note.D.cipher)
 }

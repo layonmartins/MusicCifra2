@@ -68,5 +68,13 @@ class FirstFragment : Fragment() {
     "Cm       Dbm        Ebm\n" +
     "Vem, vem Espirito Santo\n" +
     "Fm     Gbm    Abm      Bbm\n" +
+    "Renova minha vida...\n" +
+    "C7       Dbm7        Ebm7\n" +
+    "Vem, vem Espirito Santo\n" +
+    "Fm7     Gbm7    Abm7      Bbm7\n" +
+    "Renova minha vida...\n" +
+    "Cm9       Dbm9        Ebm9\n" +
+    "Vem, vem Espirito Santo\n" +
+    "Fm9     Gbm9    Abm9      Bbm9\n" +
     "Renova minha vida...\n"
 }

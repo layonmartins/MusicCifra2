@@ -36,12 +36,19 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         music = arguments?.getString("music")
+        music?.let {
+            music = it.plusTom(it)
+        }
         Log.d("layon.f", "music = \n$music")
 
         findCiphersApproach4()
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+        }
+
+        binding.plus.setOnClickListener {
+            plusTom()
         }
     }
 
@@ -75,6 +82,14 @@ class SecondFragment : Fragment() {
     }
 
     private fun findCiphersApproach4() {
+        music?.let {
+            binding.textviewSecond.setStyleOnSubstringApproach4(
+                string = it,
+            )
+        }
+    }
+
+    private fun plusTom() {
         music?.let {
             binding.textviewSecond.setStyleOnSubstringApproach4(
                 string = it,

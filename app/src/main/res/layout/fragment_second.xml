@@ -28,4 +28,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ tom"
+        app:layout_constraintBottom_toBottomOf="@+id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_second"
+        app:layout_constraintTop_toTopOf="@+id/button_second" />
 </androidx.constraintlayout.widget.ConstraintLayout>
